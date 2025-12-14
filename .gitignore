@@ -1,0 +1,129 @@
+# ==============================================================================
+# R Project .gitignore
+# Optimized for Reproducible Research Projects
+# ==============================================================================
+
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data files
+.RData
+.RDataTmp
+
+# User-specific files
+.Ruserdata
+
+# Example code in package build process
+*-Ex.R
+
+# Output files from R CMD build
+/*.tar.gz
+
+# Output files from R CMD check
+/*.Rcheck/
+
+# RStudio files
+.Rproj.user/
+
+# produced vignettes
+vignettes/*.html
+vignettes/*.pdf
+
+# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+.httr-oauth
+
+# knitr and R markdown default cache directories
+*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
+
+# R Environment Variables
+.Renviron
+.Renviron.local
+
+# pkgdown site (but keep our docs/ directory)
+# docs/  # Commented out - we want to track docs/
+
+# translation temp files
+po/*~
+
+# RStudio Connect folder
+rsconnect/
+
+# Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
+rsconnect/
+
+# MacOS
+.DS_Store
+
+# ==============================================================================
+# Project-Specific Exclusions
+# ==============================================================================
+
+# Data files (raw data should not be tracked)
+data/raw/*.xlsx
+data/raw/*.csv
+data/raw/*.xls
+# But keep README files
+!data/raw/README*.txt
+!data/raw/.gitkeep
+
+# Processed data (can be regenerated)
+data/processed/*.csv
+!data/processed/.gitkeep
+
+# Model files (large binary files)
+# EXCEPT final_model.rds - allow this for reviewers
+models/*.rds
+!models/final_model.rds
+!models/.gitkeep
+
+# Intermediate model files
+models/copd_prevalence_final_model.rds
+models/*_model.rds
+models/*.rds.bak
+
+# Output files (can be regenerated)
+outputs/figures/*.png
+outputs/figures/*.pdf
+outputs/figures/*.jpg
+outputs/figures/*.jpeg
+outputs/figures/*.svg
+outputs/figures/*.odg
+outputs/figures/*.Rplots.pdf
+!outputs/figures/.gitkeep
+
+outputs/tables/*.csv
+outputs/tables/*.xlsx
+!outputs/tables/.gitkeep
+
+outputs/audit_report/*.png
+outputs/audit_report/*.pdf
+outputs/audit_report/*.txt
+!outputs/audit_report/.gitkeep
+
+# Temporary graphics files
+Rplots.pdf
+*.Rplots.pdf
+
+# Stan compilation artifacts
+*.so
+*.dll
+*.o
+
+# Temporary R script outputs
+*.Rout
+*.Rout.save
+
+# Keep directory structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!outputs/figures/.gitkeep
+!outputs/tables/.gitkeep
+!outputs/audit_report/.gitkeep
+
