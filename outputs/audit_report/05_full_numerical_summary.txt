@@ -1,0 +1,134 @@
+═══════════════════════════════════════════════════════════════
+           FULL NUMERICAL MODEL SUMMARY
+═══════════════════════════════════════════════════════════════
+
+MODEL SUMMARY:
+───────────────────────────────────────────────────────────────
+ Family: gamma 
+  Links: mu = log 
+Formula: adjustment_factor ~ s(spirometry_rate, k = 5) + s(lethality_rate, k = 5) + s(patients_rate, k = 5) + s(biomass_stove_usage, k = 5) + s(multidimensional_poverty_index, k = 5) + s(pop_over_40_percent, k = 5) + total_prevalence 
+   Data: copd_data (Number of observations: 132) 
+  Draws: 4 chains, each with iter = 4000; warmup = 2000; thin = 1;
+         total post-warmup draws = 8000
+
+Smoothing Spline Hyperparameters:
+                                       Estimate Est.Error l-95% CI u-95% CI
+sds(sspirometry_rate_1)                    0.12      0.17     0.00     0.55
+sds(slethality_rate_1)                     1.44      0.89     0.57     3.66
+sds(spatients_rate_1)                      1.25      0.74     0.48     3.24
+sds(sbiomass_stove_usage_1)                0.08      0.14     0.00     0.42
+sds(smultidimensional_poverty_index_1)     0.20      0.26     0.01     0.82
+sds(spop_over_40_percent_1)                0.12      0.17     0.01     0.51
+                                       Rhat Bulk_ESS Tail_ESS
+sds(sspirometry_rate_1)                1.00     1576     2442
+sds(slethality_rate_1)                 1.01     1287     1821
+sds(spatients_rate_1)                  1.00     1174     1889
+sds(sbiomass_stove_usage_1)            1.00     2033     3459
+sds(smultidimensional_poverty_index_1) 1.00     1390     1712
+sds(spop_over_40_percent_1)            1.00     1914     1849
+
+Regression Coefficients:
+                                  Estimate Est.Error l-95% CI u-95% CI Rhat
+Intercept                             0.92      0.06     0.81     1.03 1.00
+total_prevalence                    -22.88      5.67   -33.82   -11.55 1.00
+sspirometry_rate_1                   -1.09      0.11    -1.34    -0.92 1.00
+slethality_rate_1                     0.17      0.15    -0.12     0.48 1.00
+spatients_rate_1                     -0.03      0.37    -0.77     0.68 1.00
+sbiomass_stove_usage_1               -0.02      0.09    -0.23     0.17 1.00
+smultidimensional_poverty_index_1     0.14      0.11    -0.04     0.38 1.00
+spop_over_40_percent_1               -0.34      0.10    -0.53    -0.15 1.00
+                                  Bulk_ESS Tail_ESS
+Intercept                             1597     2581
+total_prevalence                      1596     2584
+sspirometry_rate_1                    1870     3020
+slethality_rate_1                     3739     4426
+spatients_rate_1                      1578     2825
+sbiomass_stove_usage_1                2254     2840
+smultidimensional_poverty_index_1     1973     3916
+spop_over_40_percent_1                1565     3288
+
+Further Distributional Parameters:
+      Estimate Est.Error l-95% CI u-95% CI Rhat Bulk_ESS Tail_ESS
+shape  1925.87    260.91  1449.26  2467.11 1.00     3579     4135
+
+Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
+and Tail_ESS are effective sample size measures, and Rhat is the potential
+scale reduction factor on split chains (at convergence, Rhat = 1).
+
+
+FIXED EFFECTS:
+───────────────────────────────────────────────────────────────
+                                      Estimate  Est.Error     l-95% CI
+Intercept                           0.92186409 0.05843027   0.80552420
+total_prevalence                  -22.88264072 5.66901884 -33.81839506
+sspirometry_rate_1                 -1.08964276 0.10601211  -1.33752726
+slethality_rate_1                   0.17328688 0.15452119  -0.12445542
+spatients_rate_1                   -0.02880351 0.37078125  -0.76603036
+sbiomass_stove_usage_1             -0.01838205 0.09217437  -0.22976553
+smultidimensional_poverty_index_1   0.14484797 0.11098813  -0.03764495
+spop_over_40_percent_1             -0.34040454 0.09735610  -0.53314395
+                                     u-95% CI     Rhat Bulk_ESS Tail_ESS
+Intercept                           1.0343609 1.001146 1596.597 2580.728
+total_prevalence                  -11.5511508 1.001106 1595.875 2584.444
+sspirometry_rate_1                 -0.9208696 1.003152 1870.457 3020.124
+slethality_rate_1                   0.4767050 1.001084 3739.413 4425.967
+spatients_rate_1                    0.6848601 1.000983 1577.932 2824.674
+sbiomass_stove_usage_1              0.1694670 1.001327 2254.335 2840.254
+smultidimensional_poverty_index_1   0.3811647 1.001123 1972.805 3916.280
+spop_over_40_percent_1             -0.1501842 1.001347 1564.758 3288.028
+
+
+RANDOM EFFECTS (if any):
+───────────────────────────────────────────────────────────────
+No random effects in this model.
+
+
+SMOOTH TERMS:
+───────────────────────────────────────────────────────────────
+                                         Estimate Est.Error    l-95% CI
+sds(sspirometry_rate_1)                0.11909148 0.1736726 0.002770691
+sds(slethality_rate_1)                 1.44008141 0.8885617 0.570058708
+sds(spatients_rate_1)                  1.25008893 0.7393113 0.475617688
+sds(sbiomass_stove_usage_1)            0.08370308 0.1366531 0.002003313
+sds(smultidimensional_poverty_index_1) 0.19696309 0.2603818 0.006087839
+sds(spop_over_40_percent_1)            0.12268850 0.1652770 0.007163493
+                                        u-95% CI     Rhat Bulk_ESS Tail_ESS
+sds(sspirometry_rate_1)                0.5540293 1.001884 1576.231 2442.179
+sds(slethality_rate_1)                 3.6630552 1.005640 1287.393 1820.520
+sds(spatients_rate_1)                  3.2355813 1.002798 1173.852 1889.080
+sds(sbiomass_stove_usage_1)            0.4157428 1.001242 2032.712 3458.616
+sds(smultidimensional_poverty_index_1) 0.8249882 1.000510 1389.629 1712.006
+sds(spop_over_40_percent_1)            0.5110693 1.003698 1913.972 1848.759
+
+
+CONVERGENCE DIAGNOSTICS:
+───────────────────────────────────────────────────────────────
+Maximum Rhat:  1.0032 
+Minimum ESS (Bulk):  1565 
+Minimum ESS (Tail):  2581 
+
+
+MODEL FIT STATISTICS:
+───────────────────────────────────────────────────────────────
+
+Computed from 8000 by 132 log-likelihood matrix.
+
+         Estimate   SE
+elpd_loo    230.5  7.1
+p_loo        15.2  2.1
+looic      -461.1 14.1
+------
+MCSE of elpd_loo is NA.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.3, 0.9]).
+
+Pareto k diagnostic values:
+                         Count Pct.    Min. ESS
+(-Inf, 0.7]   (good)     131   99.2%   269     
+   (0.7, 1]   (bad)        0    0.0%   <NA>    
+   (1, Inf)   (very bad)   1    0.8%   <NA>    
+See help('pareto-k-diagnostic') for details.
+
+
+═══════════════════════════════════════════════════════════════
+END OF NUMERICAL SUMMARY
+═══════════════════════════════════════════════════════════════
