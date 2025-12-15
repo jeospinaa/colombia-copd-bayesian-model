@@ -13,14 +13,14 @@ The model addresses a critical public health challenge: reported prevalence rate
 ## Key Findings
 
 ### National Prevalence
-- **Population-Weighted National Prevalence: 2.22%** (95% CrI: 1.98% - 2.47%)
+- **Population-Weighted National Prevalence: 2.22% (95% credible interval [CrI], 2.21–2.23)
 - This represents a significant upward adjustment from raw administrative data, reflecting the true burden of undiagnosed COPD cases.
 
 ### Regional Burden
 The highest estimated prevalence is observed in:
-- **Caldas: 3.50%** (95% CrI: 3.12% - 3.89%)
-- **Boyacá: 3.42%** (95% CrI: 3.05% - 3.80%)
-- **Risaralda: 3.38%** (95% CrI: 3.01% - 3.76%)
+- **Caldas: 3.50%** (95% CrI: 3.45% - 3.56%)
+- **Boyacá: 3.34%** (95% CrI: 3.28% - 3.39%)
+- **Risaralda: 3.29%** (95% CrI: 3.25% - 3.34%)
 
 These regions exhibit elevated prevalence despite moderate reported rates, indicating substantial underdiagnosis.
 
