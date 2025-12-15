@@ -142,6 +142,9 @@ models/copd_prevalence_final_model.rds
 
 # Ignore temporary graphics (but allow final figures)
 outputs/figures/*.jpg
+!outputs/figures/Fig1.jpg
+!outputs/figures/Fig2.jpg
+!outputs/figures/Fig3.jpg
 outputs/figures/*.jpeg
 outputs/figures/*.gif
 outputs/figures/*.odg
@@ -174,6 +177,9 @@ outputs/figures/*
 !outputs/figures/.gitkeep
 !outputs/figures/*.png
 !outputs/figures/*.pdf
+!outputs/figures/Fig1.jpg
+!outputs/figures/Fig2.jpg
+!outputs/figures/Fig3.jpg
 
 outputs/tables/*
 !outputs/tables/.gitkeep

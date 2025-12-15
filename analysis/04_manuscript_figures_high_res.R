@@ -252,17 +252,12 @@ if (!spatial_available) {
     ) +
     facet_wrap(~ Type, ncol = 2, scales = "free_x")
   
-  # Save alternative figure
-  cat("Saving alternative Figure 1 (comparison plot)...\n")
-  ggsave("outputs/figures/Fig1_Colombia_Prevalence_Maps.png",
+  # Save Figure 1
+  cat("Saving Figure 1...\n")
+  ggsave("outputs/figures/Fig1.jpg",
          plot = fig1_alt,
          width = 12, height = 10, units = "in", dpi = 300)
-  cat("  ✓ PNG saved (300 dpi, 12×10 inches)\n")
-  
-  ggsave("outputs/figures/Fig1_Colombia_Prevalence_Maps.pdf",
-         plot = fig1_alt,
-         width = 12, height = 10, units = "in")
-  cat("  ✓ PDF saved (vector format)\n\n")
+  cat("  ✓ JPG saved (300 dpi, 12×10 inches)\n\n")
   
 } else {
   # Split Figure 1 into two separate files: Mainland and Islands
@@ -374,17 +369,12 @@ if (!spatial_available) {
       panel.spacing = unit(0.5, "cm")
     )
   
-  # Save Part A
-  cat("Saving Part A (Mainland)...\n")
-  ggsave("outputs/figures/Fig1_PartA_Mainland.png",
+  # Save Fig1 (Mainland map only)
+  cat("Saving Figure 1...\n")
+  ggsave("outputs/figures/Fig1.jpg",
          plot = fig1_partA,
          width = 10, height = 8, units = "in", dpi = 300)
-  cat("  ✓ PNG saved (300 dpi, 10×8 inches)\n")
-  
-  ggsave("outputs/figures/Fig1_PartA_Mainland.pdf",
-         plot = fig1_partA,
-         width = 10, height = 8, units = "in")
-  cat("  ✓ PDF saved (vector format)\n")
+  cat("  ✓ JPG saved (300 dpi, 10×8 inches)\n")
   
   # ============================================================================
   # OUTPUT 2: ISLANDS MAP (Part B)
@@ -434,21 +424,6 @@ if (!spatial_available) {
       panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.5)
     )
   
-  # Save Part B
-  cat("Saving Part B (San Andrés)...\n")
-  ggsave("outputs/figures/Fig1_PartB_SanAndres.png",
-         plot = fig1_partB,
-         width = 4, height = 3, units = "in", dpi = 300)
-  cat("  ✓ PNG saved (300 dpi, 4×3 inches)\n")
-  
-  ggsave("outputs/figures/Fig1_PartB_SanAndres.pdf",
-         plot = fig1_partB,
-         width = 4, height = 3, units = "in")
-  cat("  ✓ PDF saved (vector format)\n\n")
-  
-  # Also save the combined figure for reference (optional)
-  cat("Note: Original combined figure saved as Fig1_Colombia_Prevalence_Maps.png\n")
-  cat("      Use Part A and Part B for manuscript submission\n\n")
 }  # End of spatial_available check
 
 # ------------------------------------------------------------------------------
@@ -508,17 +483,12 @@ fig2 <- ggplot(corr_data, aes(x = spirometry_rate, y = total_prevalence)) +
     axis.text = element_text(size = 10)
   )
 
-# Save in both formats
+# Save Figure 2
 cat("Saving Figure 2...\n")
-ggsave("outputs/figures/Fig2_Spirometry_Correlation.png",
+ggsave("outputs/figures/Fig2.jpg",
        plot = fig2,
        width = 8, height = 6, units = "in", dpi = 300)
-cat("  ✓ PNG saved (300 dpi, 8×6 inches)\n")
-
-ggsave("outputs/figures/Fig2_Spirometry_Correlation.pdf",
-       plot = fig2,
-       width = 8, height = 6, units = "in")
-cat("  ✓ PDF saved (vector format)\n\n")
+cat("  ✓ JPG saved (300 dpi, 8×6 inches)\n\n")
 
 # ------------------------------------------------------------------------------
 # 5. FIGURE 3: SPIROMETRY CAPACITY VS. BENCHMARK
@@ -605,17 +575,12 @@ fig3 <- ggplot(benchmark_data, aes(x = DPNOM, y = spirometry_rate)) +
     legend.text = element_text(size = 9)
   )
 
-# Save in both formats
+# Save Figure 3
 cat("Saving Figure 3...\n")
-ggsave("outputs/figures/Fig3_Spirometry_Benchmark.png",
+ggsave("outputs/figures/Fig3.jpg",
        plot = fig3,
        width = 8, height = 12, units = "in", dpi = 300)
-cat("  ✓ PNG saved (300 dpi, 8×12 inches)\n")
-
-ggsave("outputs/figures/Fig3_Spirometry_Benchmark.pdf",
-       plot = fig3,
-       width = 8, height = 12, units = "in")
-cat("  ✓ PDF saved (vector format)\n\n")
+cat("  ✓ JPG saved (300 dpi, 8×12 inches)\n\n")
 
 # ------------------------------------------------------------------------------
 # 6. SUMMARY
@@ -626,7 +591,7 @@ cat("                    FIGURES GENERATION COMPLETE\n")
 cat("═══════════════════════════════════════════════════════════════\n\n")
 
 cat("Generated files in outputs/figures/:\n")
-figure_files <- list.files("outputs/figures", pattern = "^Fig[0-9]", full.names = FALSE)
+figure_files <- list.files("outputs/figures", pattern = "^Fig[0-9]\\.jpg$", full.names = FALSE)
 for (file in sort(figure_files)) {
   file_path <- file.path("outputs/figures", file)
   if (file.exists(file_path)) {
