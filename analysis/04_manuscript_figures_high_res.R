@@ -2,8 +2,8 @@
 # Manuscript Figures: High-Resolution Publication-Quality Visualizations
 # ==============================================================================
 # Project: Bayesian Epidemiological Study on COPD Prevalence in Colombia
-# Author: [Your Name]
-# Date: [Date]
+# Author: Ospina J, García-Morales OM, Gaviria MC
+# Date: December of 2025
 # 
 # Description: Generates publication-quality figures adhering to biomedical
 #              journal standards with high-resolution PNG (300 dpi) and PDF formats.

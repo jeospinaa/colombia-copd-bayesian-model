@@ -2,8 +2,8 @@
 # Data Preprocessing Script: Composite Bias-Correction Multiplier Calculation
 # ==============================================================================
 # Project: Bayesian Epidemiological Study on COPD Prevalence in Colombia
-# Author: [Your Name]
-# Date: [Date]
+# Author: Ospina J, García-Morales OM, Gaviria MC
+# Date: December of 2025
 # 
 # Description: This script loads raw data, calculates the Composite 
 #              Bias-Correction Multiplier (adjustment_factor) based on

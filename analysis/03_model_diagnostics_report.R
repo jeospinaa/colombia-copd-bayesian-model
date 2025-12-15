@@ -2,8 +2,8 @@
 # Model Diagnostics and Audit Report Script
 # ==============================================================================
 # Project: Bayesian Epidemiological Study on COPD Prevalence in Colombia
-# Author: [Your Name]
-# Date: [Date]
+# Author: Ospina J, García-Morales OM, Gaviria MC
+# Date: December of 2025
 # 
 # Description: This script performs comprehensive model auditing to prove
 #              model validity through transparency, reliability, and predictive

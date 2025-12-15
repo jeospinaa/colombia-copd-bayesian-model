@@ -2,8 +2,8 @@
 # Final Reporting Script: Generate Manuscript Tables with 95% CrI
 # ==============================================================================
 # Project: Bayesian Epidemiological Study on COPD Prevalence in Colombia
-# Author: [Your Name]
-# Date: [Date]
+# Author: Ospina J, García-Morales OM, Gaviria MC
+# Date: December of 2025
 # 
 # Description: This script generates impeccable tables with 95% Credible 
 #              Intervals (CrI) obtained directly from the posterior distribution
